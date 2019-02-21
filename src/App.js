@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router, Redirect } from 'react-router-dom'
 import routes from 'routes'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -36,7 +36,7 @@ class App extends React.Component {
                         routes.map((r, key) => {
                             return (
                                 <Route
-                                    render={props => (<r.component {...props} routes={r.routes} />)}
+                                    render={r.redirect ? props => (<Redirect to={r.redirect} />) : props => (<r.component {...props} routes={r.routes} />)}
                                     exact={!!r.exact}
                                     key={r.path + key}
                                     path={r.path}

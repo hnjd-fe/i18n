@@ -20,7 +20,7 @@ const setLanguage = (val) => {
 }
 
 // 获取支持语言列表
-const supportLanguage = ['zh_CN', 'en_US', 'th_TH']
+const supportLanguage = ['zh_CN', 'en_US']
 
 // 语言选择映射表
 const languageConstant = {

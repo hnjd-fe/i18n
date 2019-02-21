@@ -16,14 +16,6 @@ const localeInfo = {
     antd: require('antd/lib/locale-provider/zh_CN'),
     data: require('react-intl/locale-data/zh'),
   },
-	'th_TH': {
-		messages: {
-			...require('@locales/language-th-TH').default,
-		},
-		locale: 'th-TH',
-		antd: require('antd/lib/locale-provider/th_TH'),
-		data: require('react-intl/locale-data/th'),
-	},
 };
 
 export default localeInfo

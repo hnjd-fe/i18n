@@ -26,7 +26,10 @@ defaultAntd = defaultAntd.default || defaultAntd;
 
 let appLocale = {
   locale: 'zh-CN',
-  messages: {},
+  messages: {
+    ...require('@locales/language-zh-CN').default,
+  },
+  antd: require('antd/lib/locale-provider/zh_CN'),
   data: require('react-intl/locale-data/zh'),
 };
 

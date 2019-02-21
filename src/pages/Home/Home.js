@@ -20,7 +20,7 @@ const { FormattedMessage,
   formatRelative,
   formatNumber,
   formatPlural,
-  now
+  // now
 } = Intl
 const prefixIntl = 'app.home'
 
@@ -75,7 +75,7 @@ class Home extends React.Component {
           <br/>
           <FormattedPlural value={1} zero="none" one="message" other="messages" />
           <br/>
-          语言复数规则点击查看：<a target="_blank" href="http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html">http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html</a>
+          语言复数规则点击查看：<a rel="noopener noreferrer" target="_blank" href="http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html">http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html</a>
           <br/>
           <h2>formatMessage:</h2>
           {

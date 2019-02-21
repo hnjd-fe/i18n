@@ -10,6 +10,7 @@ let config = [
     path: '/',
     exact: true,
     component: Layout,
+    redirect: '/admin/home/index',
   },
   layout,
   {

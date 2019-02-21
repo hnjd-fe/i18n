@@ -60,6 +60,7 @@ choosePort(HOST, DEFAULT_PORT)
     const compiler = createCompiler(webpack, config, appName, urls, useYarn);
     const proxySetting = require(paths.appPackageJson).proxy;
     const proxyConfig = prepareProxy(proxySetting, paths.appPublic);
+
     const serverConfig = createDevServerConfig(
       proxyConfig,
       urls.lanUrlForConfig

@@ -1,3 +1,4 @@
+
 #基于React-intl、React全家桶集成的多语言脚手架
 
 ## 如何使用
@@ -6,7 +7,8 @@
   yarn start
 </blockquote>
 
-### 命令行执行翻译操作
+### 命令行执行翻译操作
+
 <blockquote>
   yarn translation zh_TW
 </blockquote>
