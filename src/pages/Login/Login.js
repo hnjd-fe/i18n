@@ -22,12 +22,10 @@ class Login extends React.Component {
 				console.log('Received values of form: ', values)
 				const isAllow = this.allowLogin({ userName: values.userName, password: values.password })
 				if (isAllow) {
-					message.success(formatMessage({id:'app.login.submitSuc'}))
+					message.success(formatMessage({id:'app.login.submitSuc'}), .5)
 						.then(() => {
 							this.props.checkIsLogin(true)
-							setTimeout(() => {
-								this.props.history.push('/admin/home/homePage')
-							}, 500);
+							this.props.history.push('/admin/home/homePage')
 						})
 				} else {
 					message.error(formatMessage({id:'app.login.submitErr'}))
@@ -45,6 +43,8 @@ class Login extends React.Component {
 	}
 	componentDidMount() {
 		this.props.setGlobalLoading(true)
+		this.props.form.setFieldsValue({userName: 'admin'})
+		this.props.form.setFieldsValue({password: '12345'})
 		
 	}
 	render() {
