@@ -14,7 +14,7 @@ let layout = {
 		routes: [
 			// home
 			{
-				path: '/admin/home/index',
+				path: '/admin/home/homePage',
 				component: Loadable({
 					loader: Home,
 					loading: defaultLoad

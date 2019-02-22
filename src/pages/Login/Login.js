@@ -26,7 +26,7 @@ class Login extends React.Component {
 						.then(() => {
 							this.props.checkIsLogin(true)
 							setTimeout(() => {
-								this.props.history.push('/admin/home/index')
+								this.props.history.push('/admin/home/homePage')
 							}, 500);
 						})
 				} else {

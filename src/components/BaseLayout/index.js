@@ -36,7 +36,7 @@ class BaseLayout extends React.Component {
           subtitle: [
             {
               value: formatMessage({id:`${prefixIntl}.home.index`}),
-              link: '/admin/home/index'
+              link: '/admin/home/homePage'
             },
             {
               value: formatMessage({id:`${prefixIntl}.home.setting`}),

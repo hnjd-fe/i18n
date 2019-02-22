@@ -35,6 +35,9 @@ module.exports = {
         .relative(paths.appSrc, info.absoluteResourcePath)
         .replace(/\\/g, '/'),
   },
+  performance: {
+    hints: false // 单个文件大于244kb的警告 关闭
+  },
   resolve: {
     modules: ['node_modules', paths.appNodeModules].concat(
       process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
@@ -48,7 +51,7 @@ module.exports = {
       'reducers': path.resolve(__dirname, '../src/reducers'),
       'utils': path.resolve(__dirname, '../src/utils'),
       'routes': path.resolve(__dirname, '../src/routes'),
-      '@locales': path.resolve(__dirname, '../locales'),
+      '@locales': path.resolve(__dirname, '../src/locales'),
       '@intl': path.resolve(__dirname, '../src/intl'),
     },
     plugins: [
