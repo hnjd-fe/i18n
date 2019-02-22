@@ -87,7 +87,10 @@ class BaseLayout extends React.Component {
             <FormattedMessage id={`${prefixIntl}.logout`}/>
           </NavLink>
         </Menu.Item>
-        <SubMenu title={formatMessage({id: `${prefixIntl}.language`})}>
+      </Menu>
+    )
+    const menuLang = (
+      <Menu>
           {
             supportLanguage.map((item, idx)=>{
               return (
@@ -95,7 +98,6 @@ class BaseLayout extends React.Component {
               )
             })
           }
-        </SubMenu>
       </Menu>
     )
     return (
@@ -140,9 +142,14 @@ class BaseLayout extends React.Component {
                 <Header className="base-header">
                   <span className="header-tag">
                   </span>
-                  <Dropdown overlay={menu} trigger={['click']}>
-                    <Avatar size="large" icon="user" />
-                  </Dropdown>
+                  <span className="header-right">
+                    <Dropdown overlay={menuLang} trigger={['click']}>
+                      <span className="switchLang">{languageConstant[currenLanguage]}</span>
+                    </Dropdown>
+                    <Dropdown overlay={menu} trigger={['click']}>
+                      <Avatar size="large" icon="user" />
+                    </Dropdown>
+                  </span>
                 </Header>
                 <Content className="base-content">
                   {
