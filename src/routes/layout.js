@@ -6,6 +6,7 @@ import Layout from 'components/BaseLayout'
 const defaultLoad = () => <div className="defaultLoad"/>
 
 const Home = () => import('pages/Home/Home')
+const Setting = () => import('pages/Setting/Setting')
 
 let layout = {
 		path: '/admin',
@@ -16,6 +17,13 @@ let layout = {
 				path: '/admin/home/index',
 				component: Loadable({
 					loader: Home,
+					loading: defaultLoad
+				}),
+			},
+			{
+				path: '/admin/home/setting',
+				component: Loadable({
+					loader: Setting,
 					loading: defaultLoad
 				}),
 			}

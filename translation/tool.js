@@ -2,12 +2,9 @@ const fs = require('fs')
 const path = require('path')
 const babel = require('babel-core')
 const {Translate} = require('@google-cloud/translate')
+const {projectId, key} = require('./config.js')
+const {Translate} = require('@google-cloud/translate')
 
-
-// Your Google Cloud Platform project ID
-const projectId = 'translation-225402'
-
-const key = 'AIzaSyDuQWFOaQQK3c-34lsran6J_VO4BPRTuAI'
 
 // Instantiates a client
 const translate = new Translate({projectId: projectId, key})

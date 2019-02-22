@@ -2,16 +2,18 @@
 #基于React-intl、React全家桶集成的多语言脚手架
 
 ## 如何使用
+
 ### 项目快速开始
+
 <blockquote>
   yarn start
 </blockquote>
 
 ### 命令行执行翻译操作
 
-<blockquote>
-  yarn translation zh_TW
-</blockquote>
+>yarn translation zh_TW
+
+####PS: 目前使用谷歌云翻译，可能需要自备梯子
 
 #### [目标语言]
 | 语言 | 对应值 |
@@ -79,3 +81,5 @@ export default Demo
 
 ## More
 更多API可以点击 [React-Intl](//github.com/yahoo/react-intl) 查看
+
+##

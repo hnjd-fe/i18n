@@ -37,6 +37,10 @@ class BaseLayout extends React.Component {
             {
               value: formatMessage({id:`${prefixIntl}.home.index`}),
               link: '/admin/home/index'
+            },
+            {
+              value: formatMessage({id:`${prefixIntl}.home.setting`}),
+              link: '/admin/home/setting'
             }
           ]
         },

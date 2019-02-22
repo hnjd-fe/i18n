@@ -1,4 +1,1 @@
-export default {
-    'app.home.title': 'A simple multilingual framework, hello， {world}',
-    'app.home.HTMLTitle': 'hello，{world}'
-}
+export default {"app.home.title":"A simple multilingual scaffolding, hello {world}","app.home.HTMLTitle":"Hello, {world}"}
