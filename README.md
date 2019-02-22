@@ -1,5 +1,5 @@
 
-#基于React-intl、React全家桶集成的多语言脚手架
+# 基于React-intl、React全家桶集成的多语言脚手架
 
 ## 如何使用
 
